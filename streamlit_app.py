@@ -16,6 +16,9 @@ def showModel():
     
     plotter = pv.Plotter()
     mesh = pv.Cube(center=(0, 0, 0))
+
+    x, y, z = mesh.cell_centers().points.T
+    mesh["My scalar"] = z
     
     plotter.add_mesh(
         mesh,
