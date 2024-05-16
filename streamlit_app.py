@@ -1,7 +1,7 @@
 import streamlit as st
 import pyvista as pv
 from stpyvista import stpyvista as stpv
-from streamlit_image_comparison import image_comparison as im_comparison
+from streamlit_image_comparison import image_comparison
 import cv2
 import time
 
@@ -36,7 +36,7 @@ def showModel():
 
 def showResults():
     st.info("""Gaussian Blurring""")
-    im_comparison(
+    image_comparison(
         img1="rotated_image.png",
         img2="blurred.png",
         label1="Original",
@@ -44,7 +44,7 @@ def showResults():
     )
 
     st.info("""Canny Edge Detection""")
-    im_comparison(
+    image_comparison(
         img1="blurred.png",
         img2="canny.png",
         label1="Blurred",
@@ -52,7 +52,7 @@ def showResults():
     )
 
     st.info("""Graph Plotting""")
-    im_comparison(
+    image_comparison(
         img1="canny.png",
         img2="laser_line_graph.png",
         label1="Edged",
