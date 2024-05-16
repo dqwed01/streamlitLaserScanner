@@ -74,7 +74,7 @@ def lock():
     while True:
         continue
 
-pv.start_xvfb()
+#pv.start_xvfb()
 st.set_page_config("Laser Scanner")
 st.title("Laser Scanner Webpage")
 
