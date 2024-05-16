@@ -5,6 +5,8 @@ from streamlit_image_comparison import image_comparison as im_comparison
 import cv2
 import time
 
+pv.start_xvfb()
+st.set_page_config("Laser Scanner")
 modelImg = st.empty()
 resultsImg = st.empty()
 
@@ -74,8 +76,6 @@ def lock():
     while True:
         continue
 
-#pv.start_xvfb()
-st.set_page_config("Laser Scanner")
 st.title("Laser Scanner Webpage")
 
 st.sidebar.write("Select one of the buttons to operate the Laser Scanner")
