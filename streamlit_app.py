@@ -71,7 +71,7 @@ def scan():
 def stop():
     st.sidebar.write("Stopping scan")
 
-def lock():
+def disable():
     st.sidebar.write("Locking device")
     while True:
         continue
