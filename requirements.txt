@@ -6,4 +6,4 @@ pyvista
 stpyvista
 opencv-python-headless
 streamlit_image_comparison
-imagecodecs
+scikit-image
