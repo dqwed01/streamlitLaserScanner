@@ -14,7 +14,7 @@ def showModel():
     st.title("Output")
     st.info("""3D model of scanned object""")
     
-    plotter = pv.Plotter(windows_size=[400,400])
+    plotter = pv.Plotter()
     mesh = pv.Cube(center=(0, 0, 0))
     
     plotter.add_mesh(
