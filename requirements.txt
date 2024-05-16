@@ -1,0 +1,8 @@
+pip
+streamlit
+numpy
+matplotlib
+pyvista
+stpyvista
+opencv-python-headless
+streamlit_image_comparison
